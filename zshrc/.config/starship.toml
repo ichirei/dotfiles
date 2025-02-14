@@ -1,0 +1,50 @@
+#  ____ _____
+# |  _ \_   _|  Rei Tohsaka (ichirei)
+# | |_) || |    https://github.com/ichirei
+# |  _ < | |
+# |_| \_\|_|
+
+add_newline = true
+
+format = """
+$username\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$fill\
+$shell\
+$time\
+$line_break\
+$character
+"""
+
+[character]
+success_symbol = "[➜](bold green) "
+
+[directory]
+format = "[ $path]($style)[$read_only]($read_only_style) "
+
+[fill]
+symbol = " "
+
+[shell]
+zsh_indicator = " Zsh"
+style = "#89E051"
+format = "[$indicator]($style) "
+disabled = false
+
+[time]
+disabled = false
+format = "at [ $time]($style) "
+time_format = "%I:%M %p"
+
+[username]
+show_always = true
+style_user = "#0090FF"
+style_root = "#0090FF"
+format = "[ $user]($style) "
+disabled = false
+aliases = { "reitohsaka" = "ReiTohsaka" }
