@@ -22,7 +22,8 @@ $character
 """
 
 [character]
-success_symbol = "[➜](bold green) "
+success_symbol = " [➜](bold green)"
+error_symbol = " [✗](bold red)"
 
 [directory]
 format = "[ $path]($style)[$read_only]($read_only_style) "
@@ -45,6 +46,6 @@ time_format = "%I:%M %p"
 show_always = true
 style_user = "#0090FF"
 style_root = "#0090FF"
-format = "[ $user]($style) "
+format = " []($style)[(fg:#FFFFFF) $user ](bg:#0090FF fg:#FFFFFF)[ ]($style)"
 disabled = false
 aliases = { "reitohsaka" = "ReiTohsaka" }
