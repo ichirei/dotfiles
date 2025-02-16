@@ -21,19 +21,31 @@ $line_break\
 $character
 """
 
+palette = "reitohsaka"
+
+[palettes.reitohsaka]
+blue = "#0090FF"
+green = "#89E051"
+red = "#D2665A"
+purple = "#D69ADE"
+folder = "#FFF67E"
+time = "#FFD95F"
+
 [character]
-success_symbol = " [➜](bold green)"
-error_symbol = " [✗](bold red)"
+success_symbol = " [➜](green)"
+error_symbol = " [✗](red)"
 
 [directory]
 format = "[ $path]($style)[$read_only]($read_only_style) "
+style = "folder"
+read_only_style = "red"
 
 [fill]
 symbol = " "
 
 [shell]
 zsh_indicator = " Zsh"
-style = "#89E051"
+style = "green"
 format = "[$indicator]($style) "
 disabled = false
 
@@ -41,11 +53,12 @@ disabled = false
 disabled = false
 format = "at [ $time]($style) "
 time_format = "%I:%M %p"
+style = "time"
 
 [username]
 show_always = true
-style_user = "#0090FF"
-style_root = "#0090FF"
-format = " []($style)[(fg:#FFFFFF) $user ](bg:#0090FF fg:#FFFFFF)[ ]($style)"
+style_user = "blue"
+style_root = "blue"
+format = " []($style)[(fg:white) $user ](bg:blue fg:white)[ ]($style)"
 disabled = false
 aliases = { "reitohsaka" = "ReiTohsaka" }
