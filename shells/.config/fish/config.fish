@@ -4,9 +4,15 @@
 # |_|_\___|___| |_| \___/|_||_|___/_/ \_\_|\_\/_/ \_\
 #
 
+# Set
+set fish_greeting
+
 if status is-interactive
 	figlet -ctf ~/Arch/figlet-fonts/Doom.flf "@_REITOHSAKA_@" | lolcat
 end
 
 # Starship
 starship init fish | source
+
+# FZF
+fzf --fish | source
