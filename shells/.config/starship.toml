@@ -1,13 +1,14 @@
-#  ____ _____
-# |  _ \_   _|  Rei Tohsaka (ichirei)
-# | |_) || |    https://github.com/ichirei
-# |  _ < | |
-# |_| \_\|_|
+#  ___ ___ ___ _____ ___  _  _ ___   _   _  __   _   
+# | _ \ __|_ _|_   _/ _ \| || / __| /_\ | |/ /  /_\  
+# |   / _| | |  | || (_) | __ \__ \/ _ \| ' <  / _ \ 
+# |_|_\___|___| |_| \___/|_||_|___/_/ \_\_|\_\/_/ \_\
+#
 
 add_newline = true
 
 format = """
 $username\
+$hostname\
 $directory\
 $git_branch\
 $git_commit\
@@ -32,33 +33,37 @@ folder = "#FFF67E"
 time = "#FFD95F"
 
 [character]
-success_symbol = " [➜](green)"
-error_symbol = " [✗](red)"
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
 
 [directory]
 format = "[ $path]($style)[$read_only]($read_only_style) "
-style = "folder"
-read_only_style = "red"
+style = "bold folder"
+read_only_style = "bold red"
 
 [fill]
 symbol = " "
 
+[hostname]
+disabled = false
+ssh_only = false
+format = "on [$hostname]($style) "
+style = "bold purple"
+
 [shell]
-zsh_indicator = " Zsh"
-style = "green"
+fish_indicator = " Fish"
+style = "bold green"
 format = "[$indicator]($style) "
 disabled = false
 
 [time]
 disabled = false
-format = "at [ $time]($style) "
+format = "at [ $time]($style)"
 time_format = "%I:%M %p"
-style = "time"
+style = "bold time"
 
 [username]
 show_always = true
-style_user = "blue"
-style_root = "blue"
-format = " []($style)[(fg:white) $user ](bg:blue fg:white)[ ]($style)"
+style_user = "bold blue"
+format = "[$user]($style) "
 disabled = false
-aliases = { "reitohsaka" = "ReiTohsaka" }
