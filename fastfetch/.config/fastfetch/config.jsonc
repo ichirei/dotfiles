@@ -1,99 +1,89 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  "logo": {
-    "source": "~/.config/fastfetch/data/rei.txt",
-    "type": "file",
-    "padding": {
-      "top": 1
-    },
-    "printRemaining": true,
-    "color": {
-      "1": "38;5;210"
-    }
-  },
-  "modules": [
-    {
-      "type": "title",
-      "color": {
-        "user": "38;5;210",
-        "host": "38;5;210"
-      }
-    },
-    {
-      "type": "custom",
-      "format": "╭──────────── Software ────────────",
-      "outputColor": "38;5;210"
-    },
-    {
-      "key": "│  OS ",
-      "keyColor": "38;5;210",
-      "type": "os"
-    },
-    {
-      "key": "│  KER",
-      "keyColor": "38;5;210",
-      "type": "kernel"
-    },
-    {
-      "key": "│  PKG",
-      "keyColor": "38;5;210",
-      "type": "packages"
-    },
-    {
-      "key": "│  SHL",
-      "keyColor": "38;5;210",
-      "type": "shell"
-    },
-    {
-      "key": "│  WM",
-      "keyColor": "38;5;210",
-      "type": "wm"
-    },
-    {
-      "key": "│  TER",
-      "keyColor": "38;5;210",
-      "type": "terminal"
-    },
-    {
-      "key": "│  TEF",
-      "keyColor": "38;5;210",
-      "type": "terminalfont"
-    },
-    {
-      "type": "custom",
-      "format": "├──────────── Hardware ────────────",
-      "outputColor": "38;5;210"
-    },
-    {
-      "key": "│  CPU",
-      "keyColor": "38;5;210",
-      "type": "cpu"
-    },
-    {
-      "key": "│  GPU",
-      "keyColor": "38;5;210",
-      "type": "gpu"
-    },
-    {
-      "key": "│  MEM",
-      "keyColor": "38;5;210",
-      "type": "memory"
-    },
-    {
-      "type": "command",
-      "key": "│  AGE",
-      "keyColor": "38;5;210",
-      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
-    },
-    {
-      "key": "│  UPT",
-      "keyColor": "38;5;210",
-      "type": "uptime"
-    },
-    {
-      "type": "custom",
-      "format": "╰───────────────────────────────────",
-      "outputColor": "38;5;210"
-    }
-  ]
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"logo": {
+		"color": {
+			"1": "38;5;210",
+			"2": "38;5;255"
+		}
+	},
+	"modules": [
+		{
+			"type": "title",
+			"color": {
+				"user": "38;5;210",
+				"host": "38;5;210"
+			}
+		},
+		{
+			"type": "custom",
+			"format": "╭───────────────────────────────────",
+			"outputColor": "38;5;210"
+		},
+		{
+			"key": "│  OS ",
+			"keyColor": "38;5;210",
+			"type": "os"
+		},
+		{
+			"key": "│  KER",
+			"keyColor": "38;5;210",
+			"type": "kernel"
+		},
+		{
+			"key": "│  PKG",
+			"keyColor": "38;5;210",
+			"type": "packages"
+		},
+		{
+			"key": "│  SHL",
+			"keyColor": "38;5;210",
+			"type": "shell"
+		},
+		{
+			"key": "│  WM",
+			"keyColor": "38;5;210",
+			"type": "wm"
+		},
+		{
+			"key": "│  TER",
+			"keyColor": "38;5;210",
+			"type": "terminal"
+		},
+		{
+			"key": "│  TEF",
+			"keyColor": "38;5;210",
+			"type": "terminalfont"
+		},
+		{
+			"key": "│  CPU",
+			"keyColor": "38;5;210",
+			"type": "cpu"
+		},
+		{
+			"key": "│  GPU",
+			"keyColor": "38;5;210",
+			"type": "gpu"
+		},
+		{
+			"key": "│  MEM",
+			"keyColor": "38;5;210",
+			"type": "memory"
+		},
+		{
+			"type": "command",
+			"key": "│  AGE",
+			"keyColor": "38;5;210",
+			"text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+		},
+		{
+			"key": "│  UPT",
+			"keyColor": "38;5;210",
+			"type": "uptime"
+		},
+		{
+			"type": "custom",
+			"format": "╰───────────────────────────────────",
+			"outputColor": "38;5;210"
+		}
+	]
 }

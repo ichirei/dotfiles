@@ -8,7 +8,7 @@
 set fish_greeting
 
 if status is-interactive
-	figlet -ctf ~/Arch/figlet-fonts/Doom.flf "@_REITOHSAKA_@" | lolcat
+    figlet -ctf ~/.extras/figlet-fonts/Doom.flf "@_REITOHSAKA_@" | lolcat
 end
 
 # Starship
